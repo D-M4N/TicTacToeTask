@@ -10,7 +10,7 @@ namespace TicTacToeSubmissionConole
 
             Console.SetCursorPosition(10,2);
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("WELKOME TO MORTAL Tic Tac KOMBAT");
+            Console.WriteLine("WELKOME TO MORTAL KOMBAT \"T1C T4C T03\" ");
 
                 Console.SetCursorPosition(1, 4);
                 Console.ForegroundColor = ConsoleColor.Cyan;
@@ -56,26 +56,44 @@ namespace TicTacToeSubmissionConole
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.Write("________|");
 
+            
 
 
 
             var ticTacToe = new TicTacToe();
 
-            ticTacToe.PlayerOneTurn1();
 
-            ticTacToe.PlayerTwoTurn1();
+            ticTacToe.CharacterOne();
 
-            ticTacToe.PlayerOneTurn2();
+            ticTacToe.CharacterTwo();
 
-            ticTacToe.PlayerTwoTurn2();
+            ticTacToe.CharacterOne();
 
-            
+            ticTacToe.CharacterTwo();
+
+            ticTacToe.CharacterOne();
+
+            ticTacToe.CharacterTwo();
+
+            ticTacToe.CharacterOne();
+
+            ticTacToe.CharacterTwo();
+
+            ticTacToe.CharacterOne();
+
+
+           
+            ticTacToe.CheckWinCoordinates();
+
+
+
             Console.ForegroundColor = oldColor ;
 
 
-            Console.SetCursorPosition(20, 31);
-            Console.WriteLine("MORTAL TIC TAC KOMBAT TOURNAMENT HAS ENDED");
+            Console.SetCursorPosition(20, 30);
+            Console.WriteLine("MORTAL KOMBAT \"T1C T4C TO3\" TOURNAMENT HAS ENDED");
             Console.ReadLine();
         }
+
     }
 }
