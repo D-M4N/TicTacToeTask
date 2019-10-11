@@ -14,47 +14,62 @@ namespace TicTacToeSubmissionConole
 
                 Console.SetCursorPosition(1, 4);
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.Write("COLUMN: |  0  |  1  |  2  |");
+                Console.Write("COLUMN: |     |     |     |");
 
             Console.SetCursorPosition(1, 5);
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write("________|     |     |     |");
+            Console.Write("________|  0  |  1  |  2  |");
 
-                Console.SetCursorPosition(1, 7);
+                Console.SetCursorPosition(1, 6);
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.Write("ROW: 0  |");
+                Console.Write("        |");
 
-            Console.SetCursorPosition(1, 8);
+            Console.SetCursorPosition(1, 7);
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write("_________");
+            Console.Write("ROW:  0 |");
+
+                Console.SetCursorPosition(1, 8);
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.Write("________|");
+
+            Console.SetCursorPosition(1, 9);
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write("        |");
 
                 Console.SetCursorPosition(1, 10);
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.Write("ROW: 1  |");
+                Console.Write("ROW:  1 |");
 
             Console.SetCursorPosition(1, 11);
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write("_________");
+            Console.Write("________|");
 
-                Console.SetCursorPosition(1, 13);
+                Console.SetCursorPosition(1, 12);
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.Write("ROW: 2  |");
+                Console.Write("        |");
 
-            Console.SetCursorPosition(1, 14);
+            Console.SetCursorPosition(1, 13);
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write("_________");
+            Console.Write("ROW:  2 |");
+
+                Console.SetCursorPosition(1, 14);
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.Write("________|");
 
 
 
 
             var ticTacToe = new TicTacToe();
 
-            ticTacToe.PlayerOne();
+            ticTacToe.PlayerOneTurn1();
+
+            ticTacToe.PlayerTwoTurn1();
+
+            ticTacToe.PlayerOneTurn2();
+
+            ticTacToe.PlayerTwoTurn2();
 
             
-            ticTacToe.PlayerTwo();
-
-
             Console.ForegroundColor = oldColor ;
 
 

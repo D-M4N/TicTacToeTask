@@ -19,7 +19,7 @@ namespace TicTacToeSubmissionConole
         }
 
 
-        public void PlayerOne()
+        public void PlayerOneTurn1()
         {
 
             // FOR ILLUSTRATION CHANGE TO YOUR OWN LOGIC TO DO TIC TAC TOE
@@ -35,14 +35,14 @@ namespace TicTacToeSubmissionConole
 
             Console.WriteLine();
 
-            Console.Write("Please Enter Row: ");
+            Console.Write("ENTER ROW NUMBER: ");
             var row = Console.ReadLine();
 
             Console.SetCursorPosition(2, 22);
             
             Console.WriteLine();
 
-            Console.Write("Please Enter Column: ");
+            Console.Write("ENTER COLUMN NUMBER: ");
             var column = Console.ReadLine();
 
 
@@ -50,10 +50,9 @@ namespace TicTacToeSubmissionConole
             _boardRenderer.AddMove(int.Parse(row), int.Parse(column), PlayerEnum.X, true);
 
             
-
         }
 
-        public void PlayerTwo()
+        public void PlayerTwoTurn1()
         {
             Console.ForegroundColor = ConsoleColor.Blue;
 
@@ -67,24 +66,86 @@ namespace TicTacToeSubmissionConole
 
             Console.WriteLine();
 
-            Console.Write("Please Enter Row: ");
+            Console.Write("ENTER ROW NUMBER: ");
             var row = Console.ReadLine();
 
             Console.SetCursorPosition(2, 28);
 
             Console.WriteLine();
 
-            Console.Write("Please Enter Column: ");
+            Console.Write("ENTER COLUMN NUMBER: ");
             var column = Console.ReadLine();
 
 
             _boardRenderer.AddMove(int.Parse(row), int.Parse(column), PlayerEnum.O, true);
 
-            /*if (pos[1] == "O" && pos[2] == "O" && pos[3] == "O")
-            {
-                return true;
-            }*/
+           
 
         }
+
+        public void PlayerOneTurn2()
+        {
+
+            
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            Console.SetCursorPosition(2, 19);
+
+            Console.Write("SCORPION IS \"X\"");
+
+            Console.SetCursorPosition(2, 20);
+
+            Console.ForegroundColor = ConsoleColor.White;
+
+            Console.WriteLine();
+
+            Console.Write("ENTER ROW NUMBER: ");
+            var row = Console.ReadLine();
+
+            Console.SetCursorPosition(2, 22);
+
+            Console.WriteLine();
+
+            Console.Write("ENTER COLUMN NUMBER: ");
+            var column = Console.ReadLine();
+
+
+            
+            _boardRenderer.AddMove(int.Parse(row), int.Parse(column), PlayerEnum.X, true);
+
+
+        }
+
+        public void PlayerTwoTurn2()
+        {
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            Console.SetCursorPosition(2, 25);
+
+            Console.Write("SUB-ZERO IS \"O\"");
+
+            Console.ForegroundColor = ConsoleColor.White;
+
+            Console.SetCursorPosition(2, 26);
+
+            Console.WriteLine();
+
+            Console.Write("ENTER ROW NUMBER: ");
+            var row = Console.ReadLine();
+
+            Console.SetCursorPosition(2, 28);
+
+            Console.WriteLine();
+
+            Console.Write("ENTER COLUMN NUMBER: ");
+            var column = Console.ReadLine();
+
+
+            _boardRenderer.AddMove(int.Parse(row), int.Parse(column), PlayerEnum.O, true);
+
+
+
+        }
+
     }
 }
